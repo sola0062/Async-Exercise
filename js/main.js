@@ -49,3 +49,9 @@ function changeBg(hex) {
   document.body.style.background = hex;
 }
 
+function addText(msg) {
+  const m = document.querySelector("main");
+  const p = document.createElement("p");
+  p.textContent = msg;
+  m.appendChild(p);
+}
